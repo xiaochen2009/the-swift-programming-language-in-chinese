@@ -71,7 +71,7 @@ var red, green, blue: Double
 
 > 注意
 > 
-> 一般来说你很少需要写类型标注。如果你在声明常量或者变量的时候赋了一个初始值，Swift 可以推断出这个常量或者变量的类型，请参考[类型安全和类型推断](#type_safety_and_type_inference)。在上面的例子中，没有给 `welcomeMessage` 赋初始值，所以变量 `welcomeMessage` 的类型是通过一个类型标注指定的，而不是通过初始值推断的。
+> 一般来说你很少需要写类型标注。如果你在声明常量或者变量的时候赋了一个初始值，Swift 可以推断出这个常量或者变量的类型，请参考[类型安全和类型推断](#type-safety-and-type-inference)。在上面的例子中，没有给 `welcomeMessage` 赋初始值，所以变量 `welcomeMessage` 的类型是通过一个类型标注指定的，而不是通过初始值推断的。
 
 ### 常量和变量的命名 {#naming}
 
@@ -762,7 +762,7 @@ if age > 10 {
 precondition(index > 0, "Index must be greater than zero.")
 ```
 
-你可以调用　`precondition(_:_:file:line:)` 方法来表明出现了一个错误，例如，switch 进入了 default 分支，但是所有的有效值应该被任意一个其他分支（非 default 分支）处理。
+你可以调用　`preconditionFailure(_:file:line:)` 方法来表明出现了一个错误，例如，switch 进入了 default 分支，但是所有的有效值应该被任意一个其他分支（非 default 分支）处理。
 
 > 注意
 > 
